@@ -1,7 +1,7 @@
 {
     "serverAddress": "pisces",
     "serverName": "PISCES Secure Intranet",
-    "iconName": "Moon-icon.png",
+    "iconName": "PISCES-Green2.png",
     "terminalID": "P25",
     "defaultUser": {
         "userId": "user",
