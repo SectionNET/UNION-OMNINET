@@ -1,5 +1,5 @@
 // Global scope variables
-const defaultServerAddress = "localhost";
+const defaultServerAddress = "pisces";
 let serverDatabase = {};
 let userDatabase = {};
 let userList = [];
