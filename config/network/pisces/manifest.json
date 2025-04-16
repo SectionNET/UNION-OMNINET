@@ -1,1 +1,19 @@
-
+{
+    "serverAddress": "pisces",
+    "serverName": "PISCES Secure Intranet",
+    "iconName": "Moon-icon.png",
+    "terminalID": "P25",
+    "defaultUser": {
+        "userId": "user",
+        "password": "",
+        "userName": "anonymous"
+    },
+    "initialHistory": {
+        "user": [
+            "login admin@admin"
+        ],
+        "admin": [
+            "ping fbi.gov"
+        ]
+    }
+}
