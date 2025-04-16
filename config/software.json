@@ -33,7 +33,7 @@
         ]
     },
     "Test.exe": {
-        "location": ["PISCES", "localhost"],
+        "location": ["pisces", "localhost"],
         "message": [
             "This <abbr title=\"tHeY aRe NoT hUmAn\"><s>person</s></abbr> is your target:",
             "<img src=\"https://thispersondoesnotexist.com/image\" title=\"tHeY aRe NoT hUmAn\" style=\"width: 10rem; max-width: 100%;\">"
