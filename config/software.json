@@ -1,4 +1,20 @@
 {
+    {
+  "Lovecraft.exe": {
+    "help": "Interface with an ancient, forbidden protocol.",
+    "clear": true,
+    "delayed": 1000,
+    "message": [
+      "<p class='glow' style='font-size: 2rem'>INITIATING CONNECTION TO THE OUTER VOID...</p>",
+      "Establishing contact with <span class='desync'>non-Euclidean host</span>...",
+      "<p class='hack-reveal'>Whispers detected in protocol layer Ξ</p>",
+      "<p class='desync'>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn</p>",
+      "<img src='https://upload.wikimedia.org/wikipedia/commons/9/9a/Esoteric_symbol.svg' style='width: 8rem' class='glitch'>",
+      "<p class='glow'>⚠️ TERMINAL BREACH DETECTED ⚠️</p>",
+      "<p class='shimmer'>recompiling sanity matrix...</p>",
+      "Process complete. You were never here."
+    ]
+},
     "demo.exe": {
         "help": "Testing Software",
         "clear": true,
