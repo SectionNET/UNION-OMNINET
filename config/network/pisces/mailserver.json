@@ -1,13 +1,13 @@
 [
   {
     "from": "admin",
-    "to": ["player1", "player2", "player3", "player4"],
+    "to": ["user", "player1", "player2", "player3", "player4"],
     "title": "Scheduled Server Maintenance",
     "body": "Attention all users: Scheduled server maintenance will take place tonight between 00:00 and 03:00 hours.  During this time, access may be intermittent.  Please save your work and log off before midnight.    - admin"
   },
   {
     "from": "sysadmin@net-pulse.tech",
-    "to": ["player1", "player2", "player3", "player4"],
+    "to": ["user", "player1", "player2", "player3", "player4"],
     "title": "⚠ Immediate Action Required: Account Suspension ⚠",
     "body": "Our automated system has flagged suspicious activity on your account.  Your access will be suspended unless you verify your credentials.  Visit the secure verification portal at net-pulse-auth.rr.ru/login to confirm your identity.    Failure to comply may result in permanent data loss.  Do not reply to this message."
   }
