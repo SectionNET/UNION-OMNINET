@@ -1,5 +1,5 @@
 {    
-  "Lovecraft.exe": {
+  "lovecraft.exe": {
     "help": "Interface with an ancient, forbidden protocol.",
     "clear": true,
     "delayed": 1000,
