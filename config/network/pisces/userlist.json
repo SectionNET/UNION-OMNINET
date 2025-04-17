@@ -1,25 +1,27 @@
 [
-    {
-        "userId": "8A73B5",
-        "password": "trustno1",
-        "userName": "Mulder, Fox"
-    },
-
-    {
-        "userId": "player",
-        "password": "123",
-        "userName": "player character"
-    },
-
-    {
-        "userId": "admin",
-        "password": "admin",
-        "userName": "root"
-    },
-
-    {
-        "userId": "n",
-        "password": "n",
-        "userName": "debug"
-    }
+  {
+    "userId": "player1",
+    "password": "123",
+    "userName": "Player Character 1"
+  },
+  {
+    "userId": "player2",
+    "password": "123",
+    "userName": "Player Character 2"
+  },
+  {
+    "userId": "player3",
+    "password": "123",
+    "userName": "Player Character 3"
+  },
+  {
+    "userId": "player4",
+    "password": "123",
+    "userName": "Player Character 4"
+  },
+  {
+    "userId": "admin",
+    "password": "admin",
+    "userName": "Administrator"
+  }
 ]
