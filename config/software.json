@@ -1,12 +1,12 @@
 {
-  "icecave.exe": {
+  "mandrake.exe": {
   "secretCommand": true,
   "clear": true,
   "delayed": 750,
   "message": [
     "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>",
     "<p class='shimmer' style='text-align: center;'>PISCES – PARANORMAL INTELLIGENCE SECTION FOR COUNTER-INTELLIGENCE, ESPIONAGE AND SABOTAGE</p>",
-    "<p style='text-align: center;'>OPERATION ICECAVE</p>",
+    "<p style='text-align: center;'>OPERATION MANDRAKE</p>",
     "<p style='text-align: center; text-decoration: underline;'>AUTOPSY REPORT</p>",
 
     "<p style='text-align: center;'>Note: The following document is a reproduction of an original filed under Operation Covenant, Dec 1929 (PISCES-CVT#37) with an attachment summarising more recent analyses conducted by this office.</p>",
@@ -50,13 +50,13 @@
     "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>"
     ]
   },
-  "dancer.exe": {
+  "sealantern.exe": {
   "secretCommand": true,
   "clear": true,
   "delayed": 750,
   "message": [
     "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>",
-    "<p class='shimmer' style='text-align: center;'>PISCES – PROJECT DANCER</p>",
+    "<p class='shimmer' style='text-align: center;'>PISCES – PROJECT SEA LANTERN</p>",
     "<p style='text-align: center; text-decoration: underline;'>AUTOPSY REPORT</p>",
 
     "<p style='text-align: center;'>Subject: Anomalous Entity #A1<br>Date of Death: 5 September 1984<br>Reporting Pathologist: Dr A Manara</p>",
@@ -113,7 +113,67 @@
 
     "<p style='text-align: center;'>All subjects had recently consumed human remains; no other dietary materials identified. All presented with similar lymphatic hypertrophy, possibly indicating a naturally heightened immune state. The function of the bowel nodules remains undetermined.</p>",
 
-    "<p style='text-align: center;'>Supervising Officer: Maj. R. Smith<br>PISCES – PROJECT DANCER</p>",
+    "<p style='text-align: center;'>Supervising Officer: Maj. R. Smith<br>PISCES – PROJECT SEA LANTERN</p>",
+
+    "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>"
+  ]
+},
+"chalkveil.exe": {
+  "secretCommand": true,
+  "clear": true,
+  "delayed": 750,
+  "message": [
+    "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>",
+    "<p class='shimmer' style='text-align: center;'>PISCES – PROJECT CHALK VEIL</p>",
+    "<p style='text-align: center; text-decoration: underline;'>AUTOPSY REPORT</p>",
+
+    "<p style='text-align: center;'>Subject: Anomalous Entity #C1<br>Date of Death: 1 August 1998<br>Reporting Pathologist: Dr A Manara</p>",
+
+    "<p style='text-align: center;'><strong>Circumstances:</strong> Unknown individual discovered at what is believed to be the epicentre of animal and human experimentation, attributed to unknown persons or entities. Refer to debriefing files UKS-341/2.</p>",
+
+    "<p style='text-align: center;'><strong>External Examination:</strong> Body of a slender humanoid of indeterminate age. Height 133 cm, weight 30 kg. Skin is smooth, hairless, and a neutral grey in colour. No visible signs of injury. The head is disproportionately large compared to the body (58 cm circumference). The jaw is reduced and bears only 28 teeth, the 2nd premolars and 3rd molars being absent. The nose is reduced. No auricles are present; the canal of the external ear opens directly onto the skull surface. The eyes are large and black, with no discernible iris or sclera.</p>",
+
+    "<p style='text-align: center;'>There are no nails or friction pads on any fingers or toes. The hands lack the fifth digit, though the feet possess a full complement. Nipples and navel are absent. No external genitalia are present; the urethra opens via a simple pore.</p>",
+
+    "<p style='text-align: center;'><strong>Radiographic Examination:</strong> The cranium, sternum, and pelvis show no discernible suture lines, appearing as single fused bones. The triquetral and pisiform bones of the wrist are absent, consistent with the absence of a fifth digit. Coccyx also absent.</p>",
+
+    "<p style='text-align: center;'><strong>Internal Examination:</strong> Cardiovascular system: Minor vascular anomalies noted (see attached dissection diagrams). No signs of thrombosis or stenosis. Heart weight: 190 g.</p>",
+
+    "<p style='text-align: center;'>Respiratory system: Both lungs unilobular; otherwise normal arrangement. Right lung: 235 g, left lung: 220 g.</p>",
+
+    "<p style='text-align: center;'>Digestive system: Stomach contains a small volume of clear fluid. The caecum and appendix are absent; terminal ileal valve opens directly into ascending colon. No other abnormalities. Liver weight: 760 g.</p>",
+
+    "<p style='text-align: center;'>Lymphatic system: No significant abnormalities. Spleen weight: 65 g.</p>",
+
+    "<p style='text-align: center;'>Central nervous system: Cerebrum almost entirely smooth; only lateral and superior temporal sulci present as shallow grooves. Brain is otherwise in standard anatomical position.</p>",
+
+    "<p style='text-align: center;'>Genito-urinary system: Kidneys, ureters, bladder, and urethra unremarkable. Kidney weight: 55 g each. No reproductive organs identified.</p>",
+
+    "<p style='text-align: center;'>Endocrine system: Thyroid: 11 g. Adrenals: 3 g combined. No gross anomalies observed.</p>",
+
+    "<p style='text-align: center;'><strong>Histopathological Examination:</strong> Samples from major organs (heart, lungs, stomach, liver, pancreas, spleen, brain, kidneys, thyroid, thymus, adrenals, pituitary) show no significant microscopic abnormalities.</p>",
+
+    "<p style='text-align: center;'>Skin samples reveal complete absence of hair follicles. A pigmented waxy layer coats the epidermis, overlaying a reduced stratum corneum. Sebaceous gland cells contain unusually granular cytoplasm.</p>",
+
+    "<p style='text-align: center;'>Sectioning of the right eye reveals an absent iris. The anterior chamber and lens are large, extending to the margins of the eyelids, rendering the sclera externally invisible.</p>",
+
+    "<p style='text-align: center;'><strong>Cytogenetic Examination:</strong> Reveals a single X-chromosome, with neither Barr body nor Y-chromosome detected.</p>",
+
+    "<p style='text-align: center;'><strong>Conclusions:</strong> The individual exhibits numerous anomalies when compared with the human baseline. The cerebrum is structurally simplified—more so than in higher mammals—though disproportionately large relative to body mass. Its simplicity implies an intelligence level insufficient for sentience or technological capability, barring instinctual use.</p>",
+
+    "<p style='text-align: center;'>The absence of reproductive and vestigial organs such as the coccyx and appendix indicates structural minimalism. The pigmentation and granular features of the skin suggest a specialised, though undetermined, protective adaptation.</p>",
+
+    "<p style='text-align: center;'>While some suggest extraterrestrial origin, the overwhelming anatomical and histological congruence with Homo sapiens indicates shared ancestry or derivation. Such biological proximity argues strongly against separate extraterrestrial evolution.</p>",
+
+    "<p style='text-align: center;'>The brain’s simplicity alone challenges the subject’s capacity to operate any form of complex technology unaided.</p>",
+
+    "<p style='text-align: center;'><strong>Cause of Death:</strong><br>1a – Insufficient data<br>1b –<br>1c –<br>2a – Probable non-human primate of unknown origin</p>",
+
+    "<p style='text-align: center;'>A Manara</p>",
+
+    "<p style='text-align: center;'><strong>Addendum:</strong> Four additional bodies were recovered at the scene. All were identical in morphology and DNA profile to Subject C1. The subjects are therefore likely to have originated from either multiple identical births or artificial cloning.</p>",
+
+    "<p style='text-align: center;'>Supervising Officer: Maj. R. Smith<br>PISCES – PROJECT CHALK VEIL</p>",
 
     "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>"
   ]
