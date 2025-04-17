@@ -23,5 +23,10 @@
     "userId": "admin",
     "password": "admin",
     "userName": "Administrator"
-  }
+  },
+  {
+  "userId": "user",
+  "password": "",
+  "userName": "Player Character 0"
+}
 ]
