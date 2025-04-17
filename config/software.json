@@ -49,5 +49,74 @@
 
     "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>"
     ]
-  }
+  },
+  "dancer.exe": {
+  "secretCommand": true,
+  "clear": true,
+  "delayed": 750,
+  "message": [
+    "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>",
+    "<p class='shimmer' style='text-align: center;'>PISCES – PROJECT DANCER</p>",
+    "<p style='text-align: center; text-decoration: underline;'>AUTOPSY REPORT</p>",
+
+    "<p style='text-align: center;'>Subject: Anomalous Entity #A1<br>Date of Death: 5 September 1984<br>Reporting Pathologist: Dr A Manara</p>",
+
+    "<p style='text-align: center;'><strong>Circumstances:</strong> Unknown individual recovered from site of guerrilla massacre near Santo Domingo, Nicaragua by British intelligence operatives in advisory capacity. Reported to be feeding on bodies of the deceased. Neutralised after becoming hostile.</p>",
+
+    "<p style='text-align: center;'><strong>External Examination:</strong> Body of a slender, muscular, adult male with substantial deformities. Height 181 cm, weight 77 kg. Age estimated at 25–35 years. Skin is pallid, hair dark and shoulder-length. The jaw is markedly prognathous, extending 5 cm with accompanying deformation of the lower skull. Upper canines enlarged to approximately double normal length, incisor teeth sharp and spatulate, cheek teeth bulky with exaggerated cusps. Nose long but relatively flat. Superior aspect of the auricles enlarged with sparse hair. Eyes brown, with unusually large pupils.</p>",
+
+    "<p style='text-align: center;'>Fingernails thick and claw-like. Knuckles heavily calloused. The feet are enlarged, bearing two toes each with spatulate, uncut nails. Normal, uncircumcised, male genitalia.</p>",
+
+    "<p style='text-align: center;'>Skin is tough and leathery across the whole body, and exhibits patches of encrusted mould on the left shoulder, upper right chest, left thigh, right hip and left back abdomen, reaching 9 cm maximum diameter. Seven entry wounds: four on the upper right chest, two on the right arm and one through the lower right neck, opening the oesophagus and penetrating the spinal column. Single exit wound, in the rear of the neck.</p>",
+
+    "<p style='text-align: center;'><strong>Radiographic Examination:</strong> All skeletal elements present, with deformities consistent with those observed in the external examination. Four 5.56 mm calibre bullets lodged within the right lung, one within the musculature of the upper right arm, and one within the right humerus.</p>",
+
+    "<p style='text-align: center;'><strong>Internal Examination:</strong> Cardiovascular system: No significant abnormalities, aside from exsanguination due to trauma. Heart weight: 332 g.</p>",
+
+    "<p style='text-align: center;'>Respiratory system: No significant abnormalities. Right lung perforated by four bullet wounds. Right lung weight: 451 g; left lung: 438 g.</p>",
+
+    "<p style='text-align: center;'>Digestive system: Crushed bone fragments up to 2 mm recovered from the mouth. Oesophagus lacerated on the right side by bullet wound. The stomach contains decayed flesh and offal, including skin consistent with human origin, bone fragments up to 5 mm and a small quantity of thin brown fluid. Flattened, oval, greyish nodules approximately 2 × 1.5 × 0.5 cm are found interspersed irregularly (averaging 10 cm apart) along the jejunum and upper to mid ileum. The nodules appear to be innervated by branches of the 8th to 10th thoracic spinal nerves. No other abnormalities. Liver weight: 1950 g.</p>",
+
+    "<p style='text-align: center;'>Lymphatic system: Posterior mediastinal and external iliac lymph nodes significantly enlarged, up to 3 cm. Spleen weight: 195 g.</p>",
+
+    "<p style='text-align: center;'>Central nervous system: No significant abnormalities.</p>",
+
+    "<p style='text-align: center;'>Genito-urinary system: No significant abnormalities. Kidneys: 150 g each.</p>",
+
+    "<p style='text-align: center;'>Endocrine system: Thyroid mildly hypotrophic (18 g). Thymus hypertrophic. Adrenals and pituitary macroscopically normal. Combined adrenal weight: 8 g.</p>",
+
+    "<p style='text-align: center;'><strong>Histopathological Examination:</strong> Heart, lungs, stomach, liver, pancreas, spleen, brain, kidneys, testicles, thyroid, thymus, adrenals and pituitary show no special features. A random skin sample showed mild hyperkeratosis and dermal fibrosis. Mould samples taken from skin consisted of various saprophytic species not typically associated with infections in humans or animals.</p>",
+
+    "<p style='text-align: center;'>Small bowel shows an increased number of lymphatic nodules. Mediastinal and external iliac lymph nodes show reactive changes only.</p>",
+
+    "<p style='text-align: center;'>Nodules on the serosal surface of the small bowel are composed of neural tissue and contain cells of unknown type with dendritic extensions forming a plexus on the mucosal surface. These cells stained positive with neurological markers and ultrastructural examination confirmed neurofibrillary elements.</p>",
+
+    "<p style='text-align: center;'>Cytogenetic examination revealed no chromosomal abnormalities.</p>",
+
+    "<p style='text-align: center;'><strong>Conclusions:</strong> The individual appears to be a human suffering from a previously unidentified genetic and/or endocrinological syndrome. Enlargement of lymph nodes and spleen suggests a recent or ongoing immune response, though no infectious agents were identified in body fluids. Presence of saprophytic moulds on the skin is unusual, potentially linked to an immunologic deficiency.</p>",
+
+    "<p style='text-align: center;'>Stomach contents indicate recent consumption of human flesh; jaw musculature and dentition sufficient to fracture human bone.</p>",
+
+    "<p style='text-align: center;'>The bowel nodules are of a structured, sensory nature. Their purpose remains unknown and is not consistent with known human deformities.</p>",
+
+    "<p style='text-align: center;'>Ia Cardiac arrest<br>Ib Trauma<br>II Unidentified deformation syndrome</p>",
+
+    "<p style='text-align: center;'>A Manara</p>",
+
+    "<p style='text-align: center;'><strong>Addendum:</strong> The cadavers of three further individuals exhibiting similar deformities have since been acquired by this Project. Summary follows:</p>",
+
+    "<p style='text-align: center;'>AE#A2 – Male cadaver recovered in Colombia, 1989. Similar deformities; extensive keratinisation of toes, low forehead, flattened cranium.</p>",
+    
+    "<p style='text-align: center;'>AE#A3 – Male cadaver recovered in Zaire, 1997. Greater prognathism and longer teeth; pigmentation and hair suggest native African origin.</p>",
+
+    "<p style='text-align: center;'>AE#A4 – Female cadaver recovered with AE#A3, presenting similar features. No reproductive anomalies identified.</p>",
+
+    "<p style='text-align: center;'>All subjects had recently consumed human remains; no other dietary materials identified. All presented with similar lymphatic hypertrophy, possibly indicating a naturally heightened immune state. The function of the bowel nodules remains undetermined.</p>",
+
+    "<p style='text-align: center;'>Supervising Officer: Maj. R. Smith<br>PISCES – PROJECT DANCER</p>",
+
+    "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>"
+  ]
+}
+
 }
