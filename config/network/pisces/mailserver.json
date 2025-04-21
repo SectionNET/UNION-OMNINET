@@ -10,5 +10,11 @@
     "to": ["user", "player1", "player2", "player3", "player4"],
     "title": "⚠ Immediate Action Required: Account Suspension ⚠",
     "body": "Our automated system has flagged suspicious activity on your account.  Your access will be suspended unless you verify your credentials.  Visit the secure verification portal at net-pulse-auth.rr.ru/login to confirm your identity.    Failure to comply may result in permanent data loss.  Do not reply to this message."
-  }
+  },
+  {
+  "from": "admin",
+  "to": ["player3"],
+  "title": "Mission Briefing: Level Red",
+  "body": "You are the only operative with clearance to read this.  Report to terminal node P25 at 2300 hours.    This message will not be resent."
+}
 ]
