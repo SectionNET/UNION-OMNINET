@@ -9,6 +9,44 @@
  */
 /* eslint-disable no-inner-declarations, no-nested-ternary, no-sequences, no-unused-vars */
 
+function search(args) {
+  // Merge args into a keyword string (in case user enters multiple words)
+  const keyword = args.join(' ').toLowerCase();
+
+  // Map of keywords to responses
+  const results = {
+    "deep one": [
+      "<img src='config/network/pisces/deepone.png' style='width: 12rem'>",
+      "<p class='glow'>DEEP ONE: Subject of multiple autopsy files. See also: Innsmouth.</p>"
+    ],
+    "icecave": [
+      "<p>OPERATION ICECAVE: See restricted files. Classified under PISCES.</p>"
+    ],
+    "dancer": [
+      "<p>PROJECT DANCER: Several autopsy records available. See also: AE#A1–A4.</p>",
+      "<img src='config/network/pisces/dancer_sketch.jpg' style='width: 8rem'>"
+    ],
+    "innsmouth": [
+      "<p>INNSMOUTH: Massachusetts coastal town, subject to federal investigation, Dec 1929.</p>"
+    ],
+    "alien": [
+      "<p class='shimmer'>Extraterrestrial hypothesis referenced in CHALKVEIL files. Biological proximity to Homo sapiens noted.</p>",
+      "<img src='config/network/pisces/alien_sketch.png' style='width: 10rem'>"
+    ]
+    // Add more keywords and results as needed!
+  }
+
+  // Check if keyword is present
+  for (const [key, output] of Object.entries(results)) {
+    if (keyword.includes(key)) {
+      return output;
+    }
+  }
+
+  // If nothing matches
+  return "<p>No results found for keyword: <strong>" + keyword + "</strong></p>";
+}
+
 function decrypt( args ) { // The same function can be used to encode text
     if ( args.length === 0 ) {
         return "<p>Some encrypted text must be provided: <code>decrypt 53CR3T T3XT</code></p>";
