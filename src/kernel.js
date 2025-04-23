@@ -13,7 +13,7 @@ function initDateObject() {
     const day = serverDatabase.day ? serverDatabase.day : date.getDate();
     const month = serverDatabase.month ? serverDatabase.month : date.getMonth() + 1;
     const year = serverDatabase.year ? serverDatabase.year : date.getFullYear();
-    const reference = serverDatabase.reference ? serverDatabase.reference : "(Solar System Standard Time)";
+    const reference = serverDatabase.reference ? serverDatabase.reference : "()";
     serverDate = { day, month, year, reference };
 }
 
