@@ -17,12 +17,23 @@ function search(args) {
   const results = {
    "crawthorne": [
   "<img src='config/network/pisces/crawthorne.jpg' style='width: 13rem; border-radius: 6px; box-shadow: 0 0 16px #2970a3, 0 0 34px #224;'>",
-  "<p class='glow' style='font-size:1.2em; text-align:center;'><strong>Welcome to Crawthorne!</strong></p>",
+  "<p class='glow' style='font-size:1.2em; text-align:left;'><strong>Welcome to Crawthorne!</strong></p>",
   "<p class='shimmer' style='text-align:center;'>Discover the charm of Cornwall’s best-kept secret—a picturesque fishing village where time slows and the sea sparkles under endless sky.</p>",
-  "<p style='text-align:center;'>Stroll winding lanes lined with classic stone cottages and breathe in the fresh ocean air. Enjoy panoramic cliffside views, unspoiled sandy beaches, and the welcoming glow of the historic lighthouse at sunset.</p>",
-  "<p style='text-align:center;'>Join local fishermen at the bustling harbour or sample Crawthorne’s famous pilchards, freshly caught and served with true Cornish pride.</p>",
-  "<p style='text-align:center;'>Don’t miss the stunning stained glass in St. Gryffyn’s Church, and the legendary <span class='glow'>Trevoze Monument</span> overlooking the bay—a perfect spot for a picnic or a quiet moment of reflection.</p>",
-  "<p style='font-style:italic; text-align:center;'>Crawthorne: For those who seek beauty, history, and peace by the sea.</p>"
+  "<p style='text-align:left;'>Stroll winding lanes lined with classic stone cottages and breathe in the fresh ocean air. Enjoy panoramic cliffside views, unspoiled sandy beaches, and the welcoming glow of the historic lighthouse at sunset.</p>",
+  "<p style='text-align:left;'>Join local fishermen at the bustling harbour or sample Crawthorne’s famous pilchards, freshly caught and served with true Cornish pride.</p>",
+  "<p style='text-align:left;'>Don’t miss the stunning stained glass in St. Gryffyn’s Church, and the legendary <span class='glow'>Trevoze Monument</span> overlooking the bay—a perfect spot for a picnic or a quiet moment of reflection.</p>",
+  "<p style='font-style:italic; text-align:left;'>Crawthorne: For those who seek beauty, history, and peace by the sea.</p>"
+],
+   "agent glass": [
+  "<img src='config/network/pisces/redacted_agent.jpg' style='width: 10rem; filter: grayscale(1) blur(2px); box-shadow: 0 0 8px #222;'>",
+  "<p class='glow' style='text-align:center; letter-spacing:2px;'><strong>AGENT DOSSIER: [REDACTED]</strong></p>",
+  "<p class='shimmer' style='text-align:center;'>Code Name: <span style='color:#e33636;'>Agent Glass</span></p>",
+  "<p style='text-align:center;'><strong>Status:</strong> [REDACTED]</p>",
+  "<p style='text-align:center;'><strong>Assignment:</strong> [REDACTED]</p>",
+  "<p style='text-align:center;'><strong>Clearance Level:</strong> [REDACTED]</p>",
+  "<p style='text-align:center;'><strong>Known Affiliations:</strong> [REDACTED]</p>",
+  "<p style='text-align:center;'><strong>Recent Activity:</strong> [REDACTED]</p>",
+  "<p class='hack-reveal' style='text-align:center;'>Further access denied. Insufficient clearance.</p>"
 ],
     "deep one": [
       "<img src='config/network/pisces/deepone.png' style='width: 12rem'>",
