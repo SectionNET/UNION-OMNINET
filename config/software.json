@@ -178,7 +178,7 @@
     "<p class='glow' style='font-size: 1.2rem; text-align: center;'>TOP SECRET  TOP SECRET  TOP SECRET</p>"
   ]
 },
-  "search.exe": {
+  "search": {
     "help": "Search the archive by keyword. Usage: search <keyword>",
     "clear": false
   }
