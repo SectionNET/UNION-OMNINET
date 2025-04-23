@@ -15,6 +15,15 @@ function search(args) {
 
   // Map of keywords to responses
   const results = {
+   "crawthorne": [
+  "<img src='config/network/pisces/crawthorne.jpg' style='width: 13rem; border-radius: 6px; box-shadow: 0 0 16px #2970a3, 0 0 34px #224;'>",
+  "<p class='glow' style='font-size:1.2em; text-align:center;'><strong>Welcome to Crawthorne!</strong></p>",
+  "<p class='shimmer' style='text-align:center;'>Discover the charm of Cornwall’s best-kept secret—a picturesque fishing village where time slows and the sea sparkles under endless sky.</p>",
+  "<p style='text-align:center;'>Stroll winding lanes lined with classic stone cottages and breathe in the fresh ocean air. Enjoy panoramic cliffside views, unspoiled sandy beaches, and the welcoming glow of the historic lighthouse at sunset.</p>",
+  "<p style='text-align:center;'>Join local fishermen at the bustling harbour or sample Crawthorne’s famous pilchards, freshly caught and served with true Cornish pride.</p>",
+  "<p style='text-align:center;'>Don’t miss the stunning stained glass in St. Gryffyn’s Church, and the legendary <span class='glow'>Trevoze Monument</span> overlooking the bay—a perfect spot for a picnic or a quiet moment of reflection.</p>",
+  "<p style='font-style:italic; text-align:center;'>Crawthorne: For those who seek beauty, history, and peace by the sea.</p>"
+],
     "deep one": [
       "<img src='config/network/pisces/deepone.png' style='width: 12rem'>",
       "<p class='glow'>DEEP ONE: Subject of multiple autopsy files. See also: Innsmouth.</p>"
