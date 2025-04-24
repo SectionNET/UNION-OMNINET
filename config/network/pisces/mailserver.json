@@ -1,13 +1,13 @@
 [
   {
     "from": "admin",
-    "to": ["user", "player1", "player2", "player3", "player4"],
+    "to": ["user", "player1", "Harlowe", "player2", "player3", "player4"],
     "title": "Scheduled Server Maintenance",
     "body": "Attention all users: Scheduled server maintenance will take place tonight between 00:00 and 03:00 hours.  During this time, access may be intermittent.  Please save your work and log off before midnight.    - admin"
   },
   {
     "from": "sysadmin@net-pulse.tech",
-    "to": ["user", "player1", "player2", "player3", "player4"],
+    "to": ["user", "player1", "Harlowe", "player2", "player3", "player4"],
     "title": "⚠ Immediate Action Required: Account Suspension ⚠",
     "body": "Our automated system has flagged suspicious activity on your account.  Your access will be suspended unless you verify your credentials.  Visit the secure verification portal at net-pulse-auth.rr.ru/login to confirm your identity.    Failure to comply may result in permanent data loss.  Do not reply to this message."
   },
@@ -16,5 +16,11 @@
   "to": ["player3"],
   "title": "Mission Briefing: Level Red",
   "body": "You are the only operative with clearance to read this.  Report to terminal node P25 at 2300 hours.    This message will not be resent."
+  },
+  {
+  "from": "R",
+  "to": ["Harlowe"],
+  "title": "OPERATION THRESHER",
+  "body": "Harlowe, we have a situation. Agent Glass has gone dark and we need you to follow up. Gather your cell and report to my office for briefing."
 }
 ]
