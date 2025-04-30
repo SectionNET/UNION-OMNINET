@@ -1,10 +1,13 @@
 /* eslint-disable no-inner-declarations, no-nested-ternary, no-sequences, no-unused-vars */
 
 function files() {
-  return [
-    "<p><strong>Available files on this terminal:</strong></p>",
-    "<pre>audit prep\nemail draft\npersonal\nhr reports</pre>"
-  ];
+  return `
+    <p><strong>Available files on this terminal:</strong></p>
+    <pre>audit prep
+email draft
+personal
+hr reports</pre>
+  `;
 }
 
 function read(args) {
@@ -15,34 +18,30 @@ function read(args) {
   const fileName = args.join(" ").toLowerCase();
 
   const fileContents = {
-    "audit prep": `<p><strong>audit prep:</strong> <br>
+    "audit prep": `<p><strong>audit prep:</strong><br>
 &gt;Q3_Safety_Review_DRAFT.docx<br><br>
 17 near-miss incidents (up from 9 last quarter)<br>
 Crew fatigue remains high. Formal rotation request pending Roylott sign-off.<br>
 Recurring mechanical stress on Winch Assembly B3 – recommend partial shut-down during night cycle.<br>
 Multiple unverified reports of “harmonic tremors” in substructure. Likely due to deep-water pressure and overclocked drills.</p>`,
 
-    "email draft": "<p><strong>EMAIL – To: Gerald Winestep unsent:</strong> Subject: Concerns re: Rig Load Parameters
+    "email draft": `<p><strong>EMAIL – To: Gerald Winestep (unsent)</strong><br>
+Subject: Concerns re: Rig Load Parameters</p>
+<p>Gerald,<br>
+I strongly suggest we reconsider the current extraction schedule. Roylott has bypassed both environmental thresholds and standard crew relief protocols. I know he’s reporting numbers you like, but if an accident occurs, there won’t be a PR line deep enough to bury it.<br><br>
+Regards,<br>
+—P.</p>`,
 
-Gerald
-I strongly suggest we reconsider the current extraction schedule. Roylott has bypassed both environmental thresholds and standard crew relief protocols. I know he’s reporting numbers you like, but if an accident occurs, there won’t be a PR line deep enough to bury it.
+    "personal": `<p><strong>NoteToSelf.txt:</strong><br>
+No sleep again. Same sound last night—like cables groaning through water. Checked the structural readouts: no variance.<br><br>
+I’m overreacting. It’s just the wind. The pressure. The stress.<br><br>
+Still. I should ask Kent to run another air quality check. Quietly.</p>`,
 
-Regards,
-—P.</p>",
-    "personal": "<p><strong>NoteToSelf.txt:</strong> No sleep again. Same sound last night—like cables groaning through water. Checked the structural readouts: no variance.
-
-I’m overreacting. It’s just the wind. The pressure. The stress.
-
-Still. I should ask Kent to run another air quality check. Quietly.</p>",
-    "hr reports": "<p><strong>Crew_Incidents_June.xlsx:</strong> McCraig – minor lacerations (cause: “lost balance”)
-
-Cleaver – absence from duty, claimed “time slipped”
-
-Logan – requested reassignment, citing “oppressive atmosphere”
-
-Notes column: All within expected norms. No action required.
-
-.</p>"
+    "hr reports": `<p><strong>Crew_Incidents_June.xlsx:</strong><br>
+McCraig – minor lacerations (cause: “lost balance”)<br>
+Cleaver – absence from duty, claimed “time slipped”<br>
+Logan – requested reassignment, citing “oppressive atmosphere”<br><br>
+Notes column: All within expected norms. No action required.</p>`
   };
 
   return fileContents[fileName] || `<p>No such file found: <strong>${args.join(" ")}</strong></p>`;
@@ -50,8 +49,7 @@ Notes column: All within expected norms. No action required.
 
 function search(args) {
   const keyword = args.join(' ').toLowerCase();
-
-  const results = {}; // No public keywords yet
+  const results = {}; // Currently no indexed terms
 
   for (const [key, output] of Object.entries(results)) {
     if (keyword.includes(key)) {
@@ -67,7 +65,7 @@ function help(args) {
 <p>You can read the help of a specific command by entering as follows: <code>'help commandName'</code></p>
 <p><strong>List of useful commands:</strong></p>
 <pre>
-clear   date   exit   help   mail
+clear   date   exit   help   mail   files   read
 </pre>
 <p>You can navigate in the commands usage history using the UP & DOWN arrow keys.</p>
 <p>The TAB key will provide command auto-completion.</p>
@@ -126,11 +124,18 @@ const DWEETS = {
   }),
   1829: () => dweet((t, x) => {
     for (let i = 16; i--;) {
-      x.ellipse(100 + 60 * S(t + i * 0.1), 100 + 10 * C(t + i * 0.1),
-        32 * S(-i * 0.5) + 32, 10 * S(i * 0.1) + 1,
-        1.6 + 0.5 * S(t * 0.5), 9.5, 0, true);
+      x.ellipse(
+        100 + 60 * S(t + i * 0.1),
+        100 + 10 * C(t + i * 0.1),
+        32 * S(-i * 0.5) + 32,
+        10 * S(i * 0.1) + 1,
+        1.6 + 0.5 * S(t * 0.5),
+        9.5,
+        0,
+        true
+      );
     }
     x.stroke();
   })
-  // Other dweets omitted for brevity
+  // Additional dweets can be added here
 };
