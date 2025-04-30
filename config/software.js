@@ -1,5 +1,29 @@
 /* eslint-disable no-inner-declarations, no-nested-ternary, no-sequences, no-unused-vars */
 
+function files() {
+  return [
+    "<p><strong>Available files on this terminal:</strong></p>",
+    "<pre>File A\nFile B\nFile C\nFile D</pre>"
+  ];
+}
+
+function Read(args) {
+  if (args.length === 0) {
+    return "<p>Please specify a file to read. Example: <code>Read File A</code></p>";
+  }
+
+  const fileName = args.join(" ").toLowerCase();
+
+  const fileContents = {
+    "file a": "<p><strong>File A:</strong> Project overview and objectives.</p>",
+    "file b": "<p><strong>File B:</strong> Surveillance data - Restricted access.</p>",
+    "file c": "<p><strong>File C:</strong> Personnel records summary.</p>",
+    "file d": "<p><strong>File D:</strong> Emergency contact protocols.</p>"
+  };
+
+  return fileContents[fileName] || `<p>No such file found: <strong>${args.join(" ")}</strong></p>`;
+}
+
 function search(args) {
   const keyword = args.join(' ').toLowerCase();
 
