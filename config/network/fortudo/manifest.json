@@ -1,7 +1,7 @@
 {
     "serverAddress": "fortudo",
     "serverName": "Devil's Rig Internal System",
-    "iconName": "DG1.png",
+    "iconName": "Fortudo.png",
     "terminalID": "DR1",
     "defaultUser": {
         "userId": "PiersGoldman",
