@@ -3,7 +3,7 @@
 function files() {
   return [
     "<p><strong>Available files on this terminal:</strong></p>",
-    "<pre>Q3_Safety_Review_DRAFT.docx\nFile B\nFile C\nFile D</pre>"
+    "<pre>audit prep\nFile B\nFile C\nFile D</pre>"
   ];
 }
 
@@ -15,7 +15,7 @@ function read(args) {
   const fileName = args.join(" ").toLowerCase();
 
   const fileContents = {
-    "file a": "<p><strong>Q3_Safety_Review_DRAFT.docx:</strong> > Note: For internal use only – do not circulate externally
+    "file a": "<p><strong> audit prep:</strong> > Note: For internal use only – do not circulate externally
 
 17 near-miss incidents (up from 9 last quarter)
 
