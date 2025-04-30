@@ -1,8 +1,8 @@
 {
     "serverAddress": "fortudo",
-    "serverName": "Devil's Rig Secure Intranet",
+    "serverName": "Devil's Rig Internal System",
     "iconName": "DG1.png",
-    "terminalID": "DG1",
+    "terminalID": "DR1",
     "defaultUser": {
         "userId": "PiersGoldman",
         "password": "",
