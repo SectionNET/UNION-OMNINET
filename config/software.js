@@ -3,7 +3,7 @@
 function files() {
   return [
     "<p><strong>Available files on this terminal:</strong></p>",
-    "<pre>File A\nFile B\nFile C\nFile D</pre>"
+    "<pre>Q3_Safety_Review_DRAFT.docx\nFile B\nFile C\nFile D</pre>"
   ];
 }
 
