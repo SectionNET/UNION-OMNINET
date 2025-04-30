@@ -1,5 +1,3 @@
-here is the kernal.js file, is it in here?
-
 // Global scope variables
 
 const defaultServerAddress = "fortudo";
