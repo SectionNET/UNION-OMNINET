@@ -3,27 +3,25 @@
 function files() {
   return [
     "<p><strong>Available files on this terminal:</strong></p>",
-    "<pre>audit prep\nFile B\nFile C\nFile D</pre>"
+    "<pre>Audit Prep\nFile B\nFile C\nFile D</pre>"
   ];
 }
 
 function read(args) {
   if (args.length === 0) {
-    return "<p>Please specify a file to read. Example: <code>Read File A</code></p>";
+    return "<p>Please specify a file to read. Example: <code>read Audit Prep</code></p>";
   }
 
   const fileName = args.join(" ").toLowerCase();
 
   const fileContents = {
-    "file a": "<p><strong> audit prep:</strong> > Note: For internal use only – do not circulate externally
+    "audit prep": `<p><strong>Audit Prep:</strong> <br>
+&gt; Note: For internal use only – do not circulate externally<br><br>
+17 near-miss incidents (up from 9 last quarter)<br>
+Crew fatigue remains high. Formal rotation request pending Roylott sign-off.<br>
+Recurring mechanical stress on Winch Assembly B3 – recommend partial shut-down during night cycle.<br>
+Multiple unverified reports of “harmonic tremors” in substructure. Likely due to deep-water pressure and overclocked drills.</p>`,
 
-17 near-miss incidents (up from 9 last quarter)
-
-Crew fatigue remains high. Formal rotation request pending Roylott sign-off.
-
-Recurring mechanical stress on Winch Assembly B3 – recommend partial shut-down during night cycle.
-
-Multiple unverified reports of “harmonic tremors” in substructure. Likely due to deep-water pressure and overclocked drills.</p>",
     "file b": "<p><strong>File B:</strong> Surveillance data - Restricted access.</p>",
     "file c": "<p><strong>File C:</strong> Personnel records summary.</p>",
     "file d": "<p><strong>File D:</strong> Emergency contact protocols.</p>"
@@ -35,8 +33,7 @@ Multiple unverified reports of “harmonic tremors” in substructure. Likely du
 function search(args) {
   const keyword = args.join(' ').toLowerCase();
 
-  // Empty search index (no public searchable terms for now)
-  const results = {};
+  const results = {}; // No public keywords yet
 
   for (const [key, output] of Object.entries(results)) {
     if (keyword.includes(key)) {
@@ -44,7 +41,7 @@ function search(args) {
     }
   }
 
-  return "<p>No results found for keyword: <strong>" + keyword + "</strong></p>";
+  return `<p>No results found for keyword: <strong>${keyword}</strong></p>`;
 }
 
 function help(args) {
@@ -74,7 +71,10 @@ function rot13(s) {
 }
 
 function identify() {
-  const introMsg = ["What is this?", `<img src="https://thisartworkdoesnotexist.com/?${performance.now()}" style="width: 10rem; max-width: 100%;">`];
+  const introMsg = [
+    "What is this?",
+    `<img src="https://thisartworkdoesnotexist.com/?${performance.now()}" style="width: 10rem; max-width: 100%;">`
+  ];
   return {
     message: introMsg,
     onInput(answer) {
@@ -108,10 +108,11 @@ const DWEETS = {
   }),
   1829: () => dweet((t, x) => {
     for (let i = 16; i--;) {
-      x.ellipse(100 + 60 * S(t + i * 0.1), 100 + 10 * C(t + i * 0.1), 32 * S(-i * 0.5) + 32, 10 * S(i * 0.1) + 1, 1.6 + 0.5 * S(t * 0.5), 9.5, 0, true);
+      x.ellipse(100 + 60 * S(t + i * 0.1), 100 + 10 * C(t + i * 0.1),
+        32 * S(-i * 0.5) + 32, 10 * S(i * 0.1) + 1,
+        1.6 + 0.5 * S(t * 0.5), 9.5, 0, true);
     }
     x.stroke();
-  }),
-  // (You can retain or remove these DWEETS if you're not using the `artifact` command)
+  })
+  // Other dweets omitted for brevity
 };
-
