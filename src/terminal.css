@@ -28,7 +28,6 @@
        url('fonts/inconsolata-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 @font-face {
   font-family: 'Inconsolata-Regular';
@@ -36,10 +35,12 @@
        url('fonts/inconsolata-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
+
+/* Updated Theme Colors */
 ::selection {
-  background: #FF5E99;
+  background: #9e2b25;
+  color: #fff;
 }
 html, body {
   width: 100%;
@@ -49,8 +50,8 @@ html, body {
 body {
   font-size: 11pt;
   font-family: Inconsolata, monospace;
-  color: white;
-  background-color: black;
+  color: #ffb457; /* Burnt orange */
+  background-color: #1a0e12; /* Deep burgundy/black */
 }
 #container {
   padding: .1em 1.5em 1em 1em;
@@ -84,7 +85,7 @@ body {
 }
 .prompt {
   white-space: nowrap;
-  color: #96b38a;
+  color: #d45c4c; /* Rusty red */
   margin-right: 7px;
   display: -webkit-box;
   -webkit-box-pack: center;
