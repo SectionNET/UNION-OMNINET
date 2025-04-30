@@ -2,6 +2,7 @@
 const defaultServerAddress = "fortudo";
 let serverDatabase = {};
 let userDatabase = {};
+let userList = [];
 let mailList = [];
 let cmdLine_;
 let output_;
@@ -60,7 +61,6 @@ function output(data) {
       delayed = data.delayed;
       data = data.text;
     }
-
     if (Array.isArray(data)) {
       if (delayed && data.length > 0) {
         outputLinesWithDelay(data, delayed, () => resolve(newLine()));
@@ -154,7 +154,7 @@ system = {
   mail() {
     return new Promise((resolve, reject) => {
       const messages = mailList.filter(m => m.to.includes(userDatabase.userId))
-        .map((m, i) => `[${i}] ${m.title}`);
+                               .map((m, i) => `[${i}] ${m.title}`);
       if (messages.length === 0) {
         reject(new MailServerIsEmptyError());
       } else {
@@ -191,7 +191,8 @@ function kernel(appName, args) {
   return systemApp(args);
 }
 
-kernel.init = function initKernel(cmdLineContainer, outputContainer) {
+// FIXED: anonymous function to match `init` property
+kernel.init = function(cmdLineContainer, outputContainer) {
   return new Promise((resolve, reject) => {
     cmdLine_ = document.querySelector(cmdLineContainer);
     output_ = document.querySelector(outputContainer);
