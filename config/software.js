@@ -3,19 +3,19 @@
 function files() {
   return [
     "<p><strong>Available files on this terminal:</strong></p>",
-    "<pre>Audit Prep\nFile B\nFile C\nFile D</pre>"
+    "<pre>audit prep\nFile B\nFile C\nFile D</pre>"
   ];
 }
 
 function read(args) {
   if (args.length === 0) {
-    return "<p>Please specify a file to read. Example: <code>read Audit Prep</code></p>";
+    return "<p>Please specify a file to read. Example: <code>read audit prep</code></p>";
   }
 
   const fileName = args.join(" ").toLowerCase();
 
   const fileContents = {
-    "audit prep": `<p><strong>Audit Prep:</strong> <br>
+    "audit prep": `<p><strong>audit prep:</strong> <br>
 &gt; Note: For internal use only – do not circulate externally<br><br>
 17 near-miss incidents (up from 9 last quarter)<br>
 Crew fatigue remains high. Formal rotation request pending Roylott sign-off.<br>
