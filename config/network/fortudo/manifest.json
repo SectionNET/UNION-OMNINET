@@ -1,1 +1,19 @@
-
+{
+    "serverAddress": "fortudo",
+    "serverName": "Devil's Rig Secure Intranet",
+    "iconName": "DG1.png",
+    "terminalID": "DG1",
+    "defaultUser": {
+        "userId": "PiersGoldman",
+        "password": "",
+        "userName": "PGoldman"
+    },
+    "initialHistory": {
+        "user": [
+            "login admin@admin"
+        ],
+        "admin": [
+            "ping fbi.gov"
+        ]
+    }
+}
