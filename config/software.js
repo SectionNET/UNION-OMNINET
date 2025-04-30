@@ -15,7 +15,15 @@ function read(args) {
   const fileName = args.join(" ").toLowerCase();
 
   const fileContents = {
-    "file a": "<p><strong>File A:</strong> Project overview and objectives.</p>",
+    "file a": "<p><strong>Q3_Safety_Review_DRAFT.docx:</strong> > Note: For internal use only – do not circulate externally
+
+17 near-miss incidents (up from 9 last quarter)
+
+Crew fatigue remains high. Formal rotation request pending Roylott sign-off.
+
+Recurring mechanical stress on Winch Assembly B3 – recommend partial shut-down during night cycle.
+
+Multiple unverified reports of “harmonic tremors” in substructure. Likely due to deep-water pressure and overclocked drills.</p>",
     "file b": "<p><strong>File B:</strong> Surveillance data - Restricted access.</p>",
     "file c": "<p><strong>File C:</strong> Personnel records summary.</p>",
     "file d": "<p><strong>File D:</strong> Emergency contact protocols.</p>"
