@@ -5,7 +5,8 @@
   },
   "read": {
     "help": "Read the contents of a file. Usage: Read File A",
-    "clear": false
+    "clear": false,
+    "secretCommand": true
   },
   "telnet": {
     "secretCommand": true
@@ -29,9 +30,6 @@
     "secretCommand": true,
     "help": "Search the archive by keyword. Usage: search <keyword>",
     "clear": false
-  },
-  "read": {
-    "secretCommand": true
   },
   "echo": {
     "secretCommand": true
