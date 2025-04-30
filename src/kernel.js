@@ -6,6 +6,8 @@ let userList = [];
 let mailList = [];
 let cmdLine_;
 let output_;
+let term; // <-- THIS WAS MISSING
+let softwareInfo = {};
 let serverDate = { day: "", month: "", year: "", reference: "" };
 
 function initDateObject() {
@@ -208,6 +210,8 @@ kernel.init = function(cmdLineContainer, outputContainer) {
     return new Promise((resolve, reject) => {
         cmdLine_ = document.querySelector(cmdLineContainer);
         output_ = document.querySelector(outputContainer);
+        term = window.term; // <-- Explicitly reference the global `term` object
+
         $.when(
             $.get("config/software.json", (softwareData) => {
                 softwareInfo = softwareData;
@@ -235,3 +239,4 @@ function allowedSoftwares() {
     }
     return softwares;
 }
+
