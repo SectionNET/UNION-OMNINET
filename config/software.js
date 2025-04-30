@@ -7,7 +7,7 @@ function files() {
   ];
 }
 
-function Read(args) {
+function read(args) {
   if (args.length === 0) {
     return "<p>Please specify a file to read. Example: <code>Read File A</code></p>";
   }
