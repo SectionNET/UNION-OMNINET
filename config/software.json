@@ -1,4 +1,12 @@
 {
+  "files": {
+    "help": "List available local files on this terminal.",
+    "clear": false
+  },
+  "Read": {
+    "help": "Read the contents of a file. Usage: Read File A",
+    "clear": false
+  },
   "telnet": {
     "secretCommand": true
   },
