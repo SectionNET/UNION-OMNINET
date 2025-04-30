@@ -3,28 +3,46 @@
 function files() {
   return [
     "<p><strong>Available files on this terminal:</strong></p>",
-    "<pre>audit prep\nFile B\nFile C\nFile D</pre>"
+    "<pre>audit prep\nemail draft\npersonal\nhr reports</pre>"
   ];
 }
 
 function read(args) {
   if (args.length === 0) {
-    return "<p>Please specify a file to read. Example: <code>read audit prep</code></p>";
+    return "<p>Please specify a file to read. Example: <code>read file name</code></p>";
   }
 
   const fileName = args.join(" ").toLowerCase();
 
   const fileContents = {
     "audit prep": `<p><strong>audit prep:</strong> <br>
-&gt; Note: For internal use only – do not circulate externally<br><br>
+&gt;Q3_Safety_Review_DRAFT.docx<br><br>
 17 near-miss incidents (up from 9 last quarter)<br>
 Crew fatigue remains high. Formal rotation request pending Roylott sign-off.<br>
 Recurring mechanical stress on Winch Assembly B3 – recommend partial shut-down during night cycle.<br>
 Multiple unverified reports of “harmonic tremors” in substructure. Likely due to deep-water pressure and overclocked drills.</p>`,
 
-    "file b": "<p><strong>File B:</strong> Surveillance data - Restricted access.</p>",
-    "file c": "<p><strong>File C:</strong> Personnel records summary.</p>",
-    "file d": "<p><strong>File D:</strong> Emergency contact protocols.</p>"
+    "email draft": "<p><strong>EMAIL – To: Gerald Winestep unsent:</strong> Subject: Concerns re: Rig Load Parameters
+
+Gerald
+I strongly suggest we reconsider the current extraction schedule. Roylott has bypassed both environmental thresholds and standard crew relief protocols. I know he’s reporting numbers you like, but if an accident occurs, there won’t be a PR line deep enough to bury it.
+
+Regards,
+—P.</p>",
+    "personal": "<p><strong>NoteToSelf.txt:</strong> No sleep again. Same sound last night—like cables groaning through water. Checked the structural readouts: no variance.
+
+I’m overreacting. It’s just the wind. The pressure. The stress.
+
+Still. I should ask Kent to run another air quality check. Quietly.</p>",
+    "hr reports": "<p><strong>Crew_Incidents_June.xlsx:</strong> McCraig – minor lacerations (cause: “lost balance”)
+
+Cleaver – absence from duty, claimed “time slipped”
+
+Logan – requested reassignment, citing “oppressive atmosphere”
+
+Notes column: All within expected norms. No action required.
+
+.</p>"
   };
 
   return fileContents[fileName] || `<p>No such file found: <strong>${args.join(" ")}</strong></p>`;
