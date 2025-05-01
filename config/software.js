@@ -3,10 +3,9 @@
 function files() {
   return `
     <p><strong>Available files on this terminal:</strong></p>
-    <pre>audit prep
-email draft
-personal
-hr reports</pre>
+    <pre>shift_reports
+team_roster
+message_draft</pre>
   `;
 }
 
@@ -18,30 +17,43 @@ function read(args) {
   const fileName = args.join(" ").toLowerCase();
 
   const fileContents = {
-    "audit prep": `<p><strong>audit prep:</strong><br>
-&gt;Q3_Safety_Review_DRAFT.docx<br><br>
-17 near-miss incidents (up from 9 last quarter)<br>
-Crew fatigue remains high. Formal rotation request pending Roylott sign-off.<br>
-Recurring mechanical stress on Winch Assembly B3 – recommend partial shut-down during night cycle.<br>
-Multiple unverified reports of “harmonic tremors” in substructure. Likely due to deep-water pressure and overclocked drills.</p>`,
+    "shift_reports": `<p><strong>shift_reports</strong><br>
+&gt;Daily_Report_FEB05.txt<br><br>
+Ops Status: Nominal
+Weather: Overcast, 18–23kt winds.
+Notable Issues:<br>
+Kitchen freezer #3 compressor failed again. Boris scavenged parts from a backup unit.<br>
+Stahl requested security drills for crew. Still won’t explain what he expects to happen.<br>
+McCrae reported dizziness near crane deck—Dr. Kent cleared him, but still odd.</p>`,
 
-    "email draft": `<p><strong>EMAIL – To: Gerald Winestep (unsent)</strong><br>
-Subject: Concerns re: Rig Load Parameters</p>
-<p>Gerald,<br>
-I strongly suggest we reconsider the current extraction schedule. Roylott has bypassed both environmental thresholds and standard crew relief protocols. I know he’s reporting numbers you like, but if an accident occurs, there won’t be a PR line deep enough to bury it.<br><br>
-Regards,<br>
-—P.</p>`,
+    "team_roster": `<p><strong>FORTUDO ENERGY – DEVIL’S HOLE PLATFORM</strong><br>
+| **Name**            | **Role**                     | **Shift**      | **Bunk No.** | **Comments**                             |
+|---------------------|------------------------------|----------------|--------------|------------------------------------------|
+| ** Fiona McCraig**  | Control Systems Operator     | Night          | C-12         | Dizzy spell last week. Watch closely.    |
+| **Richard Copper**  | Crane operator               | Day            | B-3          | Nose broken in mess.                     |
+| **Vance Norris**    | Security                     | Night          | D-4          | Temper problem. Avoid conflict.          |
+| **Teagan Fielding** | Stores Manager               | Split          | C-2          | Burnout showing. Sleep pattern erratic.  |
+| **Patrick Murphy**  | Catering                     | Day            | C-5          | Hears “mechanical voices.” Needs break.  |
+| **Nigel Gordon**    | Security (Audit Team)        | Day            | D -6         | Quiet. Keeps detailed notes.             |
+| **Gabe MacCready**  | Radio Operator               | Night          | A-2          | Loyal to Roylott. Very protective.       |
+| **David Stahl**     | Head of Security             | Split          | A-1          | Keeps locking door from inside.          |
+| **Rachel Kent**     | Nuclear Operations Engineer  | Day            | B-7          | “Fine” lately. Too fine.                 |
+| **Piers Goldman**   | Ops Coordinator              | Split          | Admin Suite  | Avoids decisions. Desk clutter = warning.|
+| **Harry Slocum**    | Maintainence                 | Day            | B-8          | Requests more time off.                  |
+| **Cerys Jones**     | Reactor Control              | Day/Night Alt. | C-8          | Storms make her twitchy.                 |
+| **Audit Team**      | External Audit Delegation    | Variable       | Guest-2A/B   | Friendly but nosy. Stahl doesn’t trust.  |</p>
+,
 
-    "personal": `<p><strong>NoteToSelf.txt:</strong><br>
-No sleep again. Same sound last night—like cables groaning through water. Checked the structural readouts: no variance.<br><br>
-I’m overreacting. It’s just the wind. The pressure. The stress.<br><br>
-Still. I should ask Kent to run another air quality check. Quietly.</p>`,
+    "message_draft": `<p><strong>Messag_Draft_UNSENT:</strong><br>
+To: Piers Goldman
+Subject: Support Staff Burnout
 
-    "hr reports": `<p><strong>Crew_Incidents_June.xlsx:</strong><br>
-McCraig – minor lacerations (cause: “lost balance”)<br>
-Cleaver – absence from duty, claimed “time slipped”<br>
-Logan – requested reassignment, citing “oppressive atmosphere”<br><br>
-Notes column: All within expected norms. No action required.</p>`
+Piers,
+I know you're dealing with Roylott, but I have to say it again: the maintenance team is at breaking point. Alvarez was crying in the stairwell. Boulos hasn’t taken a proper sleep cycle in five days.
+
+You keep saying to “hold the line.” I'm trying. But we’re running on duct tape and stubbornness.
+
+—Angie</p>`
   };
 
   return fileContents[fileName] || `<p>No such file found: <strong>${args.join(" ")}</strong></p>`;
