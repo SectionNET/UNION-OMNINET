@@ -23,18 +23,16 @@ function dive(args) {
   lines.push(`<p><span class="dim">Seabed reached.</span></p>`);
   lines.push(`<p><span class="dim">Initialising camera...</span></p>`);
 
-  const videoHTML = `
+  const gifHTML = `
     <div style="margin-top: 10px">
-      <video width="640" height="360" controls autoplay muted loop>
-        <source src="https://github.com/SectionNET/ROV-CTRL/blob/master/config/network/fortudo/VHS_20250506_14331100_VP9-ezgif.com-optimize.gif" type="gif">
-        Your browser does not support the video tag.
-      </video>
+      <img src="https://github.com/SectionNET/ROV-CTRL/raw/master/config/network/fortudo/VHS_20250506_14331100_VP9-ezgif.com-optimize.gif" 
+           alt="Dive camera feed" width="640" height="360" style="border: 1px solid #333;" />
     </div>
   `;
 
   return new Promise((resolve) => {
     output({ text: lines, delayed: 500 }).then(() => {
-      setTimeout(() => resolve(videoHTML), 1000);
+      setTimeout(() => resolve(gifHTML), 1000);
     });
   });
 }
@@ -120,3 +118,4 @@ const DWEETS = {
     x.stroke();
   })
 };
+
