@@ -7,6 +7,10 @@
     "help": "Read the contents of a file. Usage: Read File A",
     "clear": false
   },
+  "dive": {
+  "help": "Simulate submersible dive sequence and load camera feed.",
+  "clear": false
+  },
   "telnet": {
     "secretCommand": true
   },
