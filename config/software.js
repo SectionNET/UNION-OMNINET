@@ -26,7 +26,7 @@ function dive(args) {
   const videoHTML = `
     <div style="margin-top: 10px">
       <video width="640" height="360" controls autoplay muted loop>
-        <source src="assets/camera_feed.webm" type="video/webm">
+        <source src="https://github.com/SectionNET/ROV-CTRL/blob/master/config/network/fortudo/VHS_20250506_14331100_VP9.webm" type="video/webm">
         Your browser does not support the video tag.
       </video>
     </div>
