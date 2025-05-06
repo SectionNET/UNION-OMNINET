@@ -12,16 +12,22 @@ function read(args) {
 }
 
 function dive(args) {
-  const lines = [];
   const maxDepth = 1000;
   const step = 100;
+  const delayPerChar = 25;
+
+  const lines = [];
 
   for (let depth = step; depth <= maxDepth; depth += step) {
-    lines.push(`<p>Diving — Depth: <span class="dim">${depth}m</span></p>`);
+    lines.push({
+      text: `Diving — Depth: ${depth}m`,
+      type: 'char',
+      delay: delayPerChar
+    });
   }
 
-  lines.push(`<p><span class="dim">Seabed reached.</span></p>`);
-  lines.push(`<p><span class="dim">Initialising camera...</span></p>`);
+  lines.push({ text: "Seabed reached.", type: 'char', delay: delayPerChar });
+  lines.push({ text: "Initialising camera...", type: 'char', delay: delayPerChar });
 
   const gifHTML = `
     <div style="margin-top: 10px">
@@ -31,7 +37,7 @@ function dive(args) {
   `;
 
   return new Promise((resolve) => {
-    output({ text: lines, delayed: 500 }).then(() => {
+    output({ text: lines }).then(() => {
       setTimeout(() => resolve(gifHTML), 1000);
     });
   });
@@ -118,4 +124,3 @@ const DWEETS = {
     x.stroke();
   })
 };
-
