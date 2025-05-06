@@ -16,16 +16,13 @@ function dive(args) {
   const maxDepth = 1000;
   const step = 100;
 
-  // Add one line per step
   for (let depth = step; depth <= maxDepth; depth += step) {
     lines.push(`<p>Diving — Depth: <span class="dim">${depth}m</span></p>`);
   }
 
-  // Transition messages
   lines.push(`<p><span class="dim">Seabed reached.</span></p>`);
   lines.push({ text: `<p><span class="dim">Initialising camera...</span></p>`, delayed: 800 });
 
-  // Embed video player after delay
   const videoHTML = `
     <div style="margin-top: 10px">
       <video width="640" height="360" controls autoplay muted loop>
@@ -40,7 +37,6 @@ function dive(args) {
       setTimeout(() => resolve(videoHTML), 1000);
     });
   });
-}
 }
 
 function search(args) {
