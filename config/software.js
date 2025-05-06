@@ -1,69 +1,46 @@
 /* eslint-disable no-inner-declarations, no-nested-ternary, no-sequences, no-unused-vars */
 
 function files() {
-  return Promise.resolve(`
+  return `
     <p><strong>Available files on this terminal:</strong></p>
-    <pre>shift_reports
-team_roster
-message_draft</pre>
-  `);
+    <pre>none</pre>
+  `;
 }
 
 function read(args) {
-  if (!args || args.length === 0) {
-    return Promise.resolve("<p>Please specify a file to read. Example: <code>read file name</code></p>");
+  return "<p>No readable files are currently stored on this terminal.</p>";
+}
+
+function dive(args) {
+  const lines = [];
+  const maxDepth = 1000;
+  const step = 100;
+
+  for (let depth = step; depth <= maxDepth; depth += step) {
+    lines.push(`<span class="desync">Diving — Depth: ${depth}m</span>`);
   }
 
-  const fileName = args.join(" ").toLowerCase();
+  lines.push(`<span class="hack-reveal">Seabed reached. Initialising camera...</span>`);
+  lines.push({ text: `<span class="desync">Loading video feed...</span>`, delayed: 1000 });
 
-  const fileContents = {
-    "shift_reports": `<p><strong>shift_reports</strong><br>
-&gt;Daily_Report_FEB05.txt<br><br>
-Ops Status: Nominal<br>
-Weather: Overcast, 18–23kt winds.<br><br>
-<span class="desync">Notable Issues:</span><br>
-Kitchen freezer #3 compressor failed again. Boris scavenged parts from a backup unit.<br>
-Stahl requested security drills for crew. Still won’t explain what he expects to happen.<br>
-McCrae reported dizziness near crane deck—Dr. Kent cleared him, but still odd.</p>`,
+  const videoHTML = `
+    <div style="margin-top: 10px">
+      <video width="640" height="360" controls autoplay muted loop>
+        <source src="assets/camera_feed.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  `;
 
-    "team_roster": `<p><strong>FORTUDO ENERGY – DEVIL’S HOLE PLATFORM</strong><br>
-<pre>
-| Name              | Role                      | Shift        | Bunk No.   | Comments                                |
-|-------------------|---------------------------|--------------|------------|------------------------------------------|
-| Fiona McCraig     | Control Systems Operator  | Night        | C-12       | Dizzy spell last week. Watch closely.    |
-| Richard Copper    | Crane operator            | Day          | B-3        | Nose broken in mess.                     |
-| Vance Norris      | Security                  | Night        | D-4        | Temper problem. Avoid conflict.          |
-| Teagan Fielding   | Stores Manager            | Split        | C-2        | Burnout showing. Sleep pattern erratic.  |
-| Patrick Murphy    | Catering                  | Day          | C-5        | Hears “mechanical voices.” Needs break.  |
-| Nigel Gordon      | Security (Audit Team)     | Day          | D-6        | Quiet. Keeps detailed notes.             |
-| Gabe MacCready    | Radio Operator            | Night        | A-2        | Loyal to Roylott. Very protective.       |
-| David Stahl       | Head of Security          | Split        | A-1        | Keeps locking door from inside.          |
-| Rachel Kent       | Nuclear Ops Engineer      | Day          | B-7        | “Fine” lately. Too fine.                 |
-| Piers Goldman     | Ops Coordinator           | Split        | Admin Suite| Avoids decisions. Desk clutter = warning.|
-| Harry Slocum      | Maintenance               | Day          | B-8        | Requests more time off.                  |
-| Cerys Jones       | Reactor Control           | Day/Night    | C-8        | Storms make her twitchy.                 |
-| Audit Team        | External Delegation       | Variable     | Guest-2A/B | Friendly but nosy. Stahl doesn’t trust.  |
-</pre></p>`,
-
-    "message_draft": `<p><strong>Message_Draft_UNSENT:</strong><br>
-To: Piers Goldman<br>
-Subject: Support Staff Burnout<br><br>
-Piers,<br>
-I know you're dealing with Roylott, but I have to say it again: the team is at breaking point. McCraig was crying in the stairwell. Fielding hasn’t slept in five days.<br><br>
-You keep saying to “hold the line.” I'm trying. But we’re running on duct tape and stubbornness.<br><br>
-—Angie</p>`
-  };
-
-  return Promise.resolve(fileContents[fileName] || `<p>No such file found: <strong>${args.join(" ")}</strong></p>`);
+  return new Promise((resolve) => {
+    output({ text: lines, delayed: 300 }).then(() => {
+      setTimeout(() => resolve(videoHTML), 1000);
+    });
+  });
 }
 
 function search(args) {
-  const keyword = args.join(' ').toLowerCase();
-  const results = {}; // Empty index
-  for (const [key, output] of Object.entries(results)) {
-    if (keyword.includes(key)) return output;
-  }
-  return `<p>No results found for keyword: <strong>${keyword}</strong></p>`;
+  return `<p>No results found for keyword: <strong>${args.join(" ")}</strong></p>`;
 }
 
 function help(args) {
@@ -71,7 +48,7 @@ function help(args) {
 <p>You can read the help of a specific command by entering as follows: <code>'help commandName'</code></p>
 <p><strong>List of useful commands:</strong></p>
 <pre>
-clear   date   exit   help   mail   files   read
+clear   date   exit   help   files   read   dive
 </pre>
 <p>You can navigate in the commands usage history using the UP & DOWN arrow keys.</p>
 <p>The TAB key will provide command auto-completion.</p>`;
@@ -143,4 +120,3 @@ const DWEETS = {
     x.stroke();
   })
 };
-
