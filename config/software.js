@@ -14,20 +14,14 @@ function read(args) {
 function dive(args) {
   const maxDepth = 1000;
   const step = 100;
-  const delayPerChar = 25;
+  const delayPerLine = 300;
 
   const lines = [];
-
   for (let depth = step; depth <= maxDepth; depth += step) {
-    lines.push({
-      text: `Diving — Depth: ${depth}m`,
-      type: 'char',
-      delay: delayPerChar
-    });
+    lines.push(`Diving — Depth: ${depth}m`);
   }
-
-  lines.push({ text: "Seabed reached.", type: 'char', delay: delayPerChar });
-  lines.push({ text: "Initialising camera...", type: 'char', delay: delayPerChar });
+  lines.push("Seabed reached.");
+  lines.push("Initialising camera...");
 
   const gifHTML = `
     <div style="margin-top: 10px">
@@ -36,10 +30,13 @@ function dive(args) {
     </div>
   `;
 
-  return new Promise((resolve) => {
-    output({ text: lines }).then(() => {
-      setTimeout(() => resolve(gifHTML), 1000);
-    });
+  return new Promise(async (resolve) => {
+    for (const line of lines) {
+      await output({ text: `<p class="dim">${line}</p>` });
+      await new Promise(r => setTimeout(r, delayPerLine));
+    }
+
+    setTimeout(() => resolve(gifHTML), 1000);
   });
 }
 
