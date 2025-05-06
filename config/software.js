@@ -26,7 +26,7 @@ function dive(args) {
   const gifHTML = `
     <div style="margin-top: 10px">
       <img src="https://github.com/SectionNET/ROV-CTRL/raw/master/config/network/fortudo/VHS_20250506_14331100_VP9-ezgif.com-optimize.gif" 
-           alt="Dive camera feed" width="640" height="360" style="border: 1px solid #333;" />
+           alt="Dive camera feed" width="480" height="480" style="border: 1px solid #333;" />
     </div>
   `;
 
