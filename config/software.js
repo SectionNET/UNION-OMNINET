@@ -21,7 +21,7 @@ function dive(args) {
   }
 
   lines.push(`<p><span class="dim">Seabed reached.</span></p>`);
-  lines.push({ text: `<p><span class="dim">Initialising camera...</span></p>`, delayed: 800 });
+  lines.push(`<p><span class="dim">Initialising camera...</span></p>`);
 
   const videoHTML = `
     <div style="margin-top: 10px">
