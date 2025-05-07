@@ -1,1 +1,19 @@
-
+{
+    "serverAddress": "omninet",
+    "serverName": "UNION Secure Omni-NET",
+    "iconName": "Fortudo.png",
+    "terminalID": "Omni-1",
+    "defaultUser": {
+        "userId": "Pilot",
+        "password": "",
+        "userName": "Pilot"
+    },
+    "initialHistory": {
+        "user": [
+            "login admin@admin"
+        ],
+        "admin": [
+            "ping fbi.gov"
+        ]
+    }
+}
