@@ -1,6 +1,6 @@
 // Global scope variables
 
-const defaultServerAddress = "fortudo";
+const defaultServerAddress = "Union-OmniNET";
 
 let serverDatabase = {};
 
@@ -14,7 +14,7 @@ let cmdLine_;
 
 let output_;
 
-let serverDate = { day: "", month: "", year: "", reference: "" };
+let serverDate = { day: "", month: "", year: "5025", reference: "" };
 
 function initDateObject() {
 
