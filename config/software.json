@@ -4,11 +4,11 @@
     "clear": false
   },
   "read": {
-    "help": "Read the contents of a file. Usage: Read File A",
+    "help": "Read the contents of a file or mission. Usage: Read File A",
     "clear": false
   },
-  "dive": {
-  "help": "Simulate submersible dive sequence and load camera feed.",
+  "missions": {
+  "help": "List available missions and bounties.",
   "clear": false
   },
   "telnet": {
