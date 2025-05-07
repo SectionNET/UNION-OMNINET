@@ -1,6 +1,6 @@
 // Global scope variables
 
-const defaultServerAddress = "Union-OmniNET";
+const defaultServerAddress = "omninet";
 
 let serverDatabase = {};
 
