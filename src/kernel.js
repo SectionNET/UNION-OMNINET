@@ -14,7 +14,7 @@ let cmdLine_;
 
 let output_;
 
-let serverDate = { day: "", month: "", year: "5025", reference: "" };
+let serverDate = { day: "", month: "", year: "", reference: "" };
 
 function initDateObject() {
 
