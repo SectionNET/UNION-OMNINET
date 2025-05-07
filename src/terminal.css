@@ -37,41 +37,9 @@
   font-style: normal;
 }
 
-/* COMP/CON THEME COLORS */
-body {
-  font-size: 11pt;
-  font-family: Inconsolata, monospace;
-  color: #1a1a1a;
-  background-color: #f2f2f2;
-}
-#container {
-  padding: .1em 1.5em 1em 1em;
-}
-.terminal-wrapper {
-  background-color: #ffffff;
-  color: #1a1a1a;
-  border: 1px solid #a52026;
-}
-.prompt {
-  color: #bf2c2c;
-}
-.output-line {
-  color: #1a1a1a;
-}
-.cmdline {
-  color: #1a1a1a;
-}
-.dim {
-  color: #7a7a7a;
-}
-.hack-reveal {
-  color: #bf2c2c;
-  font-style: italic;
-}
-
-/* original highlight */
+/* Updated Theme Colors */
 ::selection {
-  background: #9e2b25;
+  background: #0088cc;
   color: #fff;
 }
 html, body {
@@ -79,9 +47,19 @@ html, body {
   height: 100%;
   margin: 0;
 }
+body {
+  font-size: 11pt;
+  font-family: Inconsolata, monospace;
+  color: #a8e0ff; /* Light blue */
+  background-color: #000; /* Black */
+}
+#container {
+  padding: .1em 1.5em 1em 1em;
+}
 #container output {
   clear: both;
   width: 100%;
+  color: #a8e0ff;
 }
 #container output h3 {
   margin: 0;
@@ -91,11 +69,16 @@ html, body {
 }
 .input-line {
   display: flex;
-  align-items: stretch;
   clear: both;
 }
 .input-line > div:nth-child(2) {
   flex: 1;
+}
+.prompt {
+  white-space: nowrap;
+  color: #69b3ff;
+  margin-right: 7px;
+  user-select: none;
 }
 .cmdline {
   outline: none;
@@ -104,15 +87,79 @@ html, body {
   width: 100%;
   font: inherit;
   border: none;
+  color: #a8e0ff;
 }
 .ls-files {
   column-width: 100px;
 }
 
-/* Special FX (kept intact) */
+/* Text Effects */
+.dim {
+  color: #5e8ca5;
+}
+.hack-reveal {
+  color: #6ad1ff;
+  font-style: italic;
+}
+
+/* Glitch effect */
 .desync {
   position: relative;
 }
-/* ... keep your .desync::after and ::before and animation styles here ... */
+.desync:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+.desync:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+@keyframes noise-anim {
+  0% { clip: rect(43px, 9999px, 23px, 0); }
+  100% { clip: rect(86px, 9999px, 100px, 0); }
+}
+@keyframes noise-anim-2 {
+  0% { clip: rect(11px, 9999px, 11px, 0); }
+  100% { clip: rect(1px, 9999px, 54px, 0); }
+}
 
-/* shimmer + glow also remain unchanged */
+/* Shimmer */
+.shimmer {
+  color: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(to right, #222 0%, #fff 50%, #222 100%);
+  background-size: 125px 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shimmer 2s infinite;
+}
+@keyframes shimmer {
+  0% { background-position: top left; }
+  100% { background-position: top right; }
+}
+
+/* Glow */
+.glow {
+  animation: blur 0.75s ease-out infinite;
+  text-shadow: 0px 0px 5px #a8e0ff, 0px 0px 7px #a8e0ff;
+}
+@keyframes blur {
+  from {
+    text-shadow: 0 0 10px #a8e0ff, 0 0 25px #a8e0ff, 0 10px 100px #5ec8ff;
+  }
+}
