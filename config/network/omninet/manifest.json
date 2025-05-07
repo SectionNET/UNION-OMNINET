@@ -1,7 +1,7 @@
 {
     "serverAddress": "omninet",
     "serverName": "UNION Secure Omni-NET",
-    "iconName": "Fortudo.png",
+    "iconName": "union.jpg",
     "terminalID": "Omni-1",
     "defaultUser": {
         "userId": "Pilot",
