@@ -11,6 +11,10 @@
   "help": "List available missions and bounties.",
   "clear": false
   },
+  "shop": {
+    "help": "Browse items available for purchase.",
+    "clear": false
+  },
   "telnet": {
     "secretCommand": true
   },

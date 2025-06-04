@@ -97,6 +97,17 @@ function artifact(args) {
   return artifactDweet();
 }
 
+function shop() {
+  return `
+    <p><strong>Available items:</strong></p>
+    <pre>
+1. Repair Kit - 100c
+2. Ammo Pack - 50c
+3. NHP Stabilizer - 500c
+    </pre>
+  `;
+}
+
 const DWEETS = {
   888: () => dweet((t, x) => {
     for (let i = 0; i < 300; i++) {
