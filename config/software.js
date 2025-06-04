@@ -99,11 +99,15 @@ function artifact(args) {
 
 function shop() {
   return `
+
+    <p class="glow">=== Mercenary Mech Squads ===</p>
+    <pre class="hack-reveal">
+Redshift Talon         - x2 assassins, x1 elite spectre, x1 scout
+Ghost Directive 6      - x1 elite witch, x2 hornets, x1 Hive
+Iron Vow Defence Group - x2 Barricades, x1 Bastion, x1 Rainmaker
+    </pre>
+    <p class="dim">Contact HQ to finalize any contracts.</p>
     <p><strong>Available items:</strong></p>
-    <pre>
-1. Repair Kit - 100c
-2. Ammo Pack - 50c
-3. NHP Stabilizer - 500c
     </pre>
   `;
 }
