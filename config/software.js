@@ -99,10 +99,24 @@ function artifact(args) {
 
 function shop() {
   return `
+REDSHIFT TALON
+x2 ASSASSIN
+x1 ELITE SPECTRE
+x1 SCOUT
+Price: 1 Stock
 
-    <p class="glow">=== Mercenary Mech Squads ===</p>
-    <pre class="hack-reveal">
-Redshift Talon         - x2 assassins, x1 elite spectre, x1 scout
+GHOST DIRECTIVE 6
+x1 ELITE WITCH
+x2 HORNETS
+x1 HIVE
+Price: 1 Stock
+
+IRON VOW DEFENCE GROUP
+x2 BARRICADES
+x1 BASTION
+x1 RAINMAKER
+Price: 1 Stock
+  `
 Ghost Directive 6      - x1 elite witch, x2 hornets, x1 Hive
 Iron Vow Defence Group - x2 Barricades, x1 Bastion, x1 Rainmaker
     </pre>
