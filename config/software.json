@@ -12,7 +12,7 @@
   "clear": false
   },
   "shop": {
-    "help": "Browse items available for purchase.",
+    "help": "Browse available mech units",
     "clear": false
   },
   "telnet": {
