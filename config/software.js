@@ -3,12 +3,38 @@
 function files() {
   return `
     <p><strong>Available files on this terminal:</strong></p>
-    <pre>none</pre>
-  `;
+    <pre>Hercynia Planetary survey</pre>
+  `
 }
 
 function read(args) {
-  return "<p>No readable files are currently stored on this terminal.</p>";
+  const name = args.join(" ").toLowerCase()
+  if (name === "hercynia planetary survey") {
+    return `
+<pre class="hack-reveal">
+TOGRAPHY AND UNIVERSAL POSITIONING
+  -+-+--- INVENIO NOSTER LOCUS INTER ASTRA ---+-+-
+UNRESTRICTED
+
+
+FILE#
+557FDCAAFD3C11A6FDBAB6F7112CEFF0
+CONFIG -ORB -SURF -HAB
+RETRIEVED:5014.159282
+
+Name: Hercynia
+Gate: Atlas-Ouanoukrim/1.523ly
+Position: CRDL5014.093:3.034285PRX/302.873ly
+Local omninode: 8E0C0E08726F17D6D9D7F444.000[Evergreen Actual, Reg. Landmark] - DECOMMISIONED 
+
+– ORBIT –
+
+EPC:4955.000
+SMA:1.32067e11
+ECC:0.090562
+</pre>`
+  }
+  return "<p>No readable files are currently stored on this terminal.</p>"
 }
 
 function dive(args) {
@@ -95,6 +121,32 @@ function artifact(args) {
     return `You do not have access to the artifact with ID ${artifactId}`;
   }
   return artifactDweet();
+}
+
+function shop() {
+  return `
+    <p class="glow">=== Mercenary Mech Squads ===</p>
+    <pre class="hack-reveal">
+REDSHIFT TALON
+x2 ASSASSIN
+x1 ELITE SPECTRE
+x1 SCOUT
+Price: 1 Stock
+
+GHOST DIRECTIVE 6
+x1 ELITE WITCH
+x2 HORNETS
+x1 HIVE
+Price: 1 Stock
+
+IRON VOW DEFENCE GROUP
+x2 BARRICADES
+x1 BASTION
+x1 RAINMAKER
+Price: 1 Stock
+    </pre>
+    <p class="dim">Contact HQ to finalize any contracts.</p>
+  `
 }
 
 const DWEETS = {

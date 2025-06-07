@@ -11,6 +11,10 @@
   "help": "List available missions and bounties.",
   "clear": false
   },
+  "shop": {
+    "help": "Browse available mech units",
+    "clear": false
+  },
   "telnet": {
     "secretCommand": true
   },
