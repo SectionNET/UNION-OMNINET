@@ -127,22 +127,16 @@ function shop() {
   return `
     <p class="glow">=== Mercenary Mech Squads ===</p>
     <pre class="hack-reveal">
-REDSHIFT TALON
-x2 ASSASSIN
-x1 ELITE SPECTRE
-x1 SCOUT
+MSMC Alpha Team
+Frontline Assault Squad
 Price: 1 Stock
 
-GHOST DIRECTIVE 6
-x1 ELITE WITCH
-x2 HORNETS
-x1 HIVE
+Shell of Ghosts
+Hacking Interference Unit
 Price: 1 Stock
 
-IRON VOW DEFENCE GROUP
-x2 BARRICADES
-x1 BASTION
-x1 RAINMAKER
+Stalwart Knights
+Defensive Specialists
 Price: 1 Stock
     </pre>
     <p class="dim">Contact HQ to finalize any contracts.</p>
